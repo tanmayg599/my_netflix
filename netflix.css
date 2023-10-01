@@ -1,0 +1,421 @@
+/* utility classes */
+.border{
+    border: 2px solid white;
+}
+.flex-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-row{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.border-bottom{
+    border-bottom:8px solid grey;
+}
+
+
+
+
+
+
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    margin:0px;
+    width:auto;
+}
+
+.sec1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:600px;
+    width:100vw;
+    color:white !important;
+    background-image: linear-gradient(to top, rgb(0 0 0 / 80%) 0, rgba(0, 0, 0, 0) 60%, rgb(0 0 0 / 80%) 100%);
+    
+}
+.register:hover,.signin:hover{
+    transition: all;
+    transform: scale(0.95);
+}
+.s1header{
+    display:flex;
+    width:50%;
+    height:50px;
+    top:0px;
+    justify-content: space-between;
+    padding-top:10px;
+    align-items: center;
+    margin-bottom:6%;
+}
+.heading1{
+    display:flex;
+    text-align: center;
+    padding :0px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.btnandoptn{
+    width:auto;
+    height:auto;
+    display:flex;
+}
+
+
+.sec1::before
+{
+    content:"";
+    background:url('../image_netflix/backimg.jpg') no-repeat center center/cover;
+    z-index:-1;
+    position:absolute;
+    height:100%;
+    width:100vw;
+}
+
+.main1
+{
+    color:white;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+
+
+
+.main1 h1{
+    font-weight: 900;
+    font-size:48px;
+    word-wrap: wrap;
+}
+.main1 .input1{
+    width:auto;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .main1 .input1 input{
+        position:relative;
+    width:62%;
+    border-radius:4px;
+    height:50px;
+    background-color:transparent;
+    color:#FFFFFF;
+}
+.main1 .input1 button{
+    width:30%;
+    border-radius:5px;
+    background-color: red;
+    height:50px;
+    padding:24px 16px 8px;
+}
+.sec2{
+    height:657.89px;
+    background-color:black;
+    width:100%;
+    
+}
+.contents2{
+    height:513.89px;
+    width:70%;
+}
+.s2pic{
+    display:flex;
+    align-items: last baseline;
+    justify-content: center;
+    width:650px;
+    height:100%;
+    background:url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg') no-repeat center center/contain;
+    /* z-index:-1; */
+}
+@media screen and (max-width:1140px)
+{
+
+    .input1{
+        flex-direction: column;
+    }
+    
+    .s1header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:auto;
+    }
+
+
+    .contents2{
+        display:flex;
+        flex-direction:column;
+        height:600px;
+        width:100%;
+    }
+
+    .s2pic{
+        height:400%;
+        width:100%;
+        
+    }
+    .s2content{
+        height:20px;
+        width:100% !important;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .s2cd1,.s3cd1{
+        font-size:2.2rem!important;
+        font-weight: 200;
+        width:100%;
+        padding:0px;
+        margin:0px;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s2cd2,.s3cd2
+    {
+        width: 100% !important;
+
+        padding:0px;
+        margin:0px!important;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec3,.sec4{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fd2{
+        height:153.2px;
+        width:85%;
+        color:white;
+        display:grid;
+        /* grid-template-columns:auto auto auto; */
+        grid-template-columns: repeat(2,auto);
+    }
+    .s5c3d2{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+.over{
+    width:367px;
+    height:103px;
+    bottom:0px;
+    margin-bottom:25px;
+    background-color:black;
+    border-radius:10px;
+    padding:8px 12px;
+}
+.ophoto1{
+    width:57.14px;
+    height:80px;
+}
+.ocontent1{
+    width:250px;
+    height:80px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.oc1,.oc2{
+    height:18.4px;
+    width:220px;
+    
+}
+.odwnld{
+    width:48px;
+    height:80px;
+}
+
+.s2content{
+    width:50%;
+    height:95%;
+}
+
+#rotate{
+    color:white;
+    font-size:30px;
+}
+.sec2:hover #rotate{ 
+    color:#0071EB;
+    transition: all ease-in-out;
+    transition-duration:4s;
+    
+    transform: rotate(720deg);
+
+}
+
+.s3pic{
+    display:flex;
+    align-items: last baseline;
+    justify-content: center;
+    width:650px;
+    height:100%;
+    background:url('../image_netflix/cap.jpeg') no-repeat center center/contain;
+}
+
+
+.d1{
+    position:relative;
+}
+
+
+
+.sec4{
+    width:100%;
+    height:658px;
+    background-color:black;
+    
+}
+
+.sec5{
+    width:100%;
+    /* height:933px; */
+    height:auto;
+
+    padding:72px 0px;
+    background-color: black;
+
+}
+.s5content1{
+    width:85%;
+    height:70px;
+    width:85%;
+    text-wrap: wrap;
+    text-align: center;
+}
+.s5content2{
+    width:85%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:24px 0px 0px 0px;
+    
+}
+.s5content3{
+    width:auto;
+    height:auto;
+}
+.s5c2d {
+    
+    height:auto;
+    width:100%;
+    margin:1% 0%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding:10px;
+    background-color:rgba(124, 121, 121, 0.416);
+}
+.scv1{
+    margin-bottom:20px;
+    background-color: #2D2D2D;
+}
+.s5s2{
+    margin-right:30px;
+}
+.s5btn:hover{
+    transition:all;
+    transform:scale(0.9);
+}
+.showcontent{
+    height:auto;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding:24px;
+    background-color:rgba(124, 121, 121, 0.416);
+    
+}
+.s5c2d:hover{
+    background-color:rgba(85, 83, 83, 0.416);
+    cursor: pointer;
+}
+.s5s1{
+    color:white;
+    width:310px;
+    height:27.2px;
+    font-size:24px;
+}
+.s5content3{
+    width:920px;
+    height:auto;
+}
+button:hover{
+    cursor:pointer;
+}
+button{
+    border-radius:8px;
+
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content:left;
+    width:100%;
+    height:auto;
+    background-color:black;
+    
+}
+.futb1{
+    width:auto;
+    height:10%;
+    margin:72px 367px;
+}
+.fd1{
+    height:auto;
+    display:flex;
+    align-items: center;
+}
+.fd2{
+    height:auto;
+    width:100%;
+    color:white;
+    display:grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin-bottom:5%;
+}
+.last_button{
+    display:flex;
+    justify-content: center;
+}
+.fd2 a
+{
+    width:auto;
+    color:#FFFFFFB3;
+}
+button span{
+    font-size:15px;
+}

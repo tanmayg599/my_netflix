@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="../netflix_css/netflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+      $("#p1").click(function(){
+        $(".slide1").slideDown(200);
+      });
+    });
+
+    $(document).ready(function(){
+      $("#n1").click(function(){
+        $(".slide1").slideUp(200);
+      });
+    });
+
+
+
+
+    $(document).ready(function(){
+      $("#p2").click(function(){
+        $(".slide2").slideDown(200);
+      });
+    });
+
+    $(document).ready(function(){
+      $("#n2").click(function(){
+        $(".slide2").slideUp(200);
+      });
+    });
+
+
+
+    $(document).ready(function(){
+      $("#p3").click(function(){
+        $(".slide3").slideDown(200);
+      });
+    });
+
+    $(document).ready(function(){
+      $("#n3").click(function(){
+        $(".slide3").slideUp(200);
+      });
+    });
+
+
+
+    $(document).ready(function(){
+      $("#p4").click(function(){
+        $(".slide4").slideDown(200);
+      });
+    });
+
+    $(document).ready(function(){
+      $("#n4").click(function(){
+        $(".slide4").slideUp(200);
+      });
+    });
+
+
+
+    $(document).ready(function(){
+      $("#p5").click(function(){
+        $(".slide5").slideDown(200);
+      });
+    });
+
+    $(document).ready(function(){
+      $("#n5").click(function(){
+        $(".slide5").slideUp(200);
+      });
+    });
+
+
+
+    $(document).ready(function(){
+      $("#p6").click(function(){
+        $(".slide6").slideDown(200);
+      });
+    });
+
+    $(document).ready(function(){
+      $("#n6").click(function(){
+        $(".slide6").slideUp(200);
+      });
+    });
+    </script>
+
+    
+
+
+</head>
+
+
+<body>
+    
+      
+    <section class="sec1 border-bottom">
+       
+        <header class="s1header">
+            <div class="logo" style="width:20%;height:90%;">
+                <img src="../image_netflix/logo netflix.png" style="height:100%;width:100%;"  alt="">
+            </div>
+        <div class="btnandoptn">
+            <select name="language" id="language" style="width:auto;height:35px;border-radius:4px;font-size:20px;background-color: transparent;color:white;">
+                <option value="English" style="color:black;"><i class="fa-solid fa-language"></i>English</option>
+                <option value="Hindi"   style="color:black;">hindi</option>
+                <option value="german"  style="color:black;">german</option>
+            </select>
+           <a href="../netflix_html/signin.html" target="_blank"><button class="signin" style="font-size:17px;font-family: sans-serif;background-color:red;color:white;border-radius:4px;height:100%;margin-left:20px;">Sign in</button>
+           </a> 
+        </div>
+            
+        </header>
+        
+        <div class="main1 flex-column">
+            <h1 class="heading1">Unlimited movies, TV shows and more</h1>
+            <p style="font-size:24px;font-weight:700;text-align: center;">Watch anywhere, Cancel anytime</p>
+            <h3 style="text-align: center;text-wrap:wrap ;">Ready to watch? Enter your email or register here to continue</h3>
+            <div class="input1">
+                <input type="text" placeholder="Email adress" style="font-size:20px;padding-left:20px;background-color:black;opacity:0.7;-radius:8px;">
+                <button class="register flex-row" style="font-size:24px;color:white;padding-bottom:20px;font-family: sans-serif;width:203px;"><a style="text-decoration: none;color:white;" target="_blank" href="https://www.netflix.com/signup/registration?locale=en-IN">Get Started  <i class="fa-solid fa-chevron-right"></i></a>  </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2 flex-column border-bottom">
+        <div class="contents2 flex-row">
+            <div class="s2pic">
+                <div class="over flex-row">
+                    <div class="ophoto1 border">
+                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" style="height:100%;width:100%;"  alt="">
+                    </div>
+                    <div class="ocontent1 ">
+                        <div class="oc1 " style="color:white;font-size: 16px;">
+                            Stranger Things
+                        </div>
+                        <div class="oc2 " style="color:#0071EB;font-size:14px;">
+                            Downloading...
+                        </div>
+                    </div>
+                    <div class="odwnld  flex-column" >
+                        <i  class="fa-solid fa-rotate-right" id="rotate"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="s2content flex-column">
+                <div class="s2cd1" style="width:auto;height:auto;font-size:48px;font-weight:900;color:white;text-align:center">
+                Download Your Shows to Watch Online 
+            </div>
+                <div class="s2cd2" style="width:auto;height:auto;font-size:24px;margin:16px 0px 0px;color:white;text-align: center;">
+                    Save your favourites easily and always have something to watch.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec3 sec2 flex-column border-bottom">
+        <div class="contents2 flex-row">
+           
+            <div class="s2content flex-column">
+                <div class="s2cd1" style="width:auto;height:auto;font-size:48px;font-weight:900;color:white;text-align:center">
+                Download Your Shows to Watch Online 
+            </div>
+                <div class="s2cd2" style="width:auto;height:auto;font-size:24px;margin:16px 0px 0px;color:white;text-align: center;">
+                    Save your favourites easily and always have something to watch.</div>
+            </div>
+
+            <div class="s3pic">
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="sec4 flex-row border-bottom">
+        <div class="s4pic  flex-column" style="width:680px;height:520px;">
+        <img src="https://occ-0-6246-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" alt="">
+        </div>
+        <div class="s4cont  flex-column" style="width:680px;height:520px;">
+       <div class="s4cd1" style="width:100%;height:68px;color:white;font-size:48px;font-weight:900;text-align: center;">
+            Create profiles for kids
+        </div>
+        <div class="s4cd2" style="width:100%;height:54.4px;margin:16px 0px 0px;font-size:24px;color:white;text-align: center;padding:5px;">
+            Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+        </div>
+        </div>
+    </section>
+
+    <section class="sec5 border-bottom flex-column">
+        <div class="s5content1 flex-row" style="color:white;font-size:48px;font-weight:900;height:auto;width:auto;">
+            Frequently Asked Questions
+        </div>
+        <div class="s5content2" >
+            
+         <div class="scv1" style="background-color:grey;width:100%;height:auto;">
+                <div class="s5c2d s5c2d1">
+                  <span class="s5s1" id="n1">
+                    What is Netflix?
+                </span>
+                <span class="s5s2 flex-column" id="p1" style="width:30px;height:20px;color:white;font-size:45px;"><i class="fa-thin fa-plus" style="font-size:75px;font-weight:lighter;"></i></span>
+            </div>
+            <div class="slide1" style="color:white;display:none;width:98.5%;padding:10px;margin:0;box-sizing: border-box;font-size:24px;padding:10px;">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+                <br><br>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+            </div>
+        </div>
+            
+            
+        <div class="scv1" style="background-color:grey;width:100%;height:auto;">
+            <div class="s5c2d s5c2d1" >
+         
+              <span class="s5s1 s5s11" id="n2">
+                How much does Netflix cost?
+               
+            </span>
+            <span class="s5s2 s5s21 flex-column" id="p2" style="width:30px;height:20px;color:white;font-size:45px;"><i class="fa-thin fa-plus" style="font-size:75px;font-weight:lighter;"></i></span>
+        </div>
+        <div class="slide2" style="color:white;display:none;width:98.5%;padding:10px;margin:0;box-sizing: border-box;font-size:24px;padding:10px;">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</div>
+    </div>
+
+
+
+
+    <div class="scv1" style="background-color:grey;width:100%;height:auto;">
+        <div class="s5c2d s5c2d1" >
+          <span class="s5s1" id="n3">
+            Where can I watch?
+          </span>
+          <span class="s5s2 s5s21 flex-column" id="p3" style="width:30px;height:20px;color:white;font-size:45px;"><i class="fa-thin fa-plus" style="font-size:75px;font-weight:lighter;"></i></span>
+        </div>
+        <div class="slide3" style="color:white;display:none;width:98.5%;padding:10px;margin:0;box-sizing: border-box;font-size:24px;padding:10px;">
+        Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</div>
+    </div>
+
+
+
+    <div class="scv1" style="background-color:grey;width:100%;height:auto;">
+        <div class="s5c2d s5c2d1" >
+          <span class="s5s1 s5s11" id="n4">
+            How do I cancel?
+          </span>
+          <span class="s5s2 s5s21 flex-column" id="p4" style="width:30px;height:20px;color:white;font-size:45px;"><i class="fa-thin fa-plus" style="font-size:75px;font-weight:lighter;"></i></span>
+        </div>
+        <div class="slide4" style="color:white;display:none;width:98.5%;padding:10px;margin:0;box-sizing: border-box;font-size:24px;padding:10px;">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+    </div>
+
+
+
+    <div class="scv1" style="background-color:grey;width:100%;height:auto;">
+        <div class="s5c2d s5c2d1" >
+          <span class="s5s1 s5s11" id="n5">
+            What can I watch on Netflix?
+          </span>
+          <span class="s5s2 s5s21 flex-column" id="p5" style="width:30px;height:20px;color:white;font-size:45px;"><i class="fa-thin fa-plus" style="font-size:75px;font-weight:lighter;"></i></span>
+        </div>
+        <div class="slide5" style="color:white;display:none;width:98.5%;padding:10px;margin:0;box-sizing: border-box;font-size:24px;padding:10px;">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+    </div>
+            
+            
+           
+    <div class="scv1" style="background-color:grey;width:100%;height:auto;">
+        <div class="s5c2d s5c2d1" >
+          <span class="s5s1 s5s11" id="n6">
+            Is netflix good for Kids?
+            </span>
+          <span class="s5s2 s5s21 flex-column" id="p6" style="width:30px;height:20px;color:white;font-size:45px;"><i class="fa-thin fa-plus" style="font-size:75px;font-weight:lighter;"></i></span>
+        </div>
+        <div class="slide6" style="color:white;display:none;width:98.5%;padding:10px;margin:0;box-sizing: border-box;font-size: 24px;">
+        The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+          </div>
+    </div>
+       
+        </div>
+       
+       
+        <div class="s5content3 flex-column">
+            <div class="s5c3d1 flex-row" style="width:90vw;height:auto;color:white;font-size:20px;flex-wrap:wrap;text-align: center;">
+                Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            
+            <div class="s5c3d2 flex-row" style="width:586px;height:66px;margin:16px 167px 0px;">
+                <input type="text" class="s5em flex-column" style="border-radius:4px;height:90%;width:60%;padding:24px 16px 24px;font-size:24px;background-color: transparent;box-sizing:border-box;color:white;" placeholder="Email adress">
+                <button class="s5btn flex" style="height:90%;width:40%;margin-left:10px;background-color:red;color:white;font-size:30px;">
+                    <a href="https://www.netflix.com/signup/registration?locale=en-IN" target="_blank" style="text-decoration: none;color:white;">Get Started
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+                </button>
+            
+            </div>
+
+        </div>
+        
+
+    </section>
+
+
+    <footer class="border-bottom">
+        <div class="futb1">
+            <div class="fd1" style="box-sizing:-box;height:30px;width:100%;padding:0px 0px 12px;color:#FFFFFFB3;;font-size:16px;">
+                <span>Questions?</span>
+                <span>Call</span> 
+                <a href="" class="phonenum" id="callid" style="color:#FFFFFFB3;;font-size:16px;">0185212345</a>
+            </div>
+            <div class="fd2">
+                <!-- <ul data-layout="container" class="ful"> -->
+                    
+                   
+                        <a  target="_blank" href="https://help.netflix.com/support/412">FAQ</a>
+                   
+
+                   
+                        <a target="_blank" href="https://help.netflix.com">Help Centre</a>
+                   
+
+                   
+                        <a target="_blank" href="/youraccount">Account</a>
+                   
+
+                   
+                        <a target="_blank" href="https://media.netflix.com/">Media Centre</a>
+                   
+
+                    
+                        <a target="_blank" href="http://ir.netflix.com/">Investor Relations</a>
+                   
+
+                    
+                        <a target="_blank" href="https://jobs.netflix.com/jobs">Jobs</a>
+                   
+
+                    
+                        <a target="_blank" href="/watch">Ways to Watch</a>
+                   
+
+                    
+                        <a target="_blank" href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+                   
+
+                    
+                        <a target="_blank" href="https://help.netflix.com/legal/privacy">Privacy</a>
+                   
+
+                    
+                        <a target="_blank" href="#">Cookie Preferences</a>
+                   
+
+                    
+                        <a target="_blank" href="https://help.netflix.com/legal/corpinfo">Corporate Information</a>
+                   
+
+                    
+                        <a target="_blank" href="https://help.netflix.com/contactus">Contact Us</a>
+                   
+
+                    
+                        <a target="_blank" href="https://fast.com">Speed Test</a>
+                   
+
+                    
+                        <a target="_blank" href="https://help.netflix.com/legal/notices">Legal Notices</a>
+                   
+
+                    
+                        <a target="_blank" href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a>
+                   
+                
+            </div>
+            <div class="fd3" style="height:32px;width:100%;">
+            <button style="box-sizing:border-box;padding:4px;color:#FFFFFFB3;background-color:transparent;border-radius:4px;font-size:20px;border:1px solid white;"class="last_button border"><i class="fa-solid fa-language"></i>
+                <span>English</span></button>
+        </div>
+            <div class="fd4" style="height:auto;width:100%;font-size:20px;color:#FFFFFFB3;;padding-top:auto;text-wrap:nowrap;">
+            Netflix India
+            </div>
+           
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

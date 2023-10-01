@@ -1,0 +1,238 @@
+<html>
+    <head>
+        <title>signin</title>
+    </head>
+    <style>
+       
+        .row{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .column{
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        *{
+            font-family: sans-serif;
+            color:white;
+            box-sizing: border-box;
+        }
+
+
+
+        
+        .complete
+        {
+            height:100%;
+            width:99vw;
+            overflow-x: hidden;
+            background-image: linear-gradient(to top, rgb(0 0 0 / 80%) 0, rgba(0, 0, 0, 0) 60%, rgb(0 0 0 / 80%) 100%);
+            margin:0;
+    
+        }
+        .complete::before{
+            content: "";
+            position: absolute;
+           
+            z-index: -1;
+            background :url('../image_netflix/nfback.jpg') no-repeat center center/cover;
+            width:100%;
+            height:100vh;
+            opacity:0.7;
+            margin:0px ;
+            padding: 0;
+        }
+        header{
+            height:10%;
+            width:100%;
+        }
+        .logo{
+            width:166.5px;
+            height:45px;
+            /* border:2px solid black; */
+            margin:20px;
+            
+        }
+        footer{
+            height:30%;
+            width:100%;
+        }
+        main{
+            height:60%;
+            width:100%;
+            display:grid;
+            grid-template-columns:4fr 1fr 4fr;
+            
+        }
+        footer{
+            background-color: black;
+            opacity: 0.7;
+            width:100%;
+            /* height:fit-content; */
+            height:300px;
+            
+        }
+        .fcover{
+            width:40%;
+            height:100%;
+            
+            /* background-color: aquamarine; */
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding:1% 0;
+            box-sizing: border-box;
+            color:white;
+            
+        }
+        .futh,.futm,.futb{
+            height:auto;
+            width:100%;
+            /* color:grey; */
+            color:white;
+        }
+        .futm{
+            display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 10%;
+        }
+        .language{
+            background-color:red;
+            opacity:0.9;
+            border:1px solid white;
+            padding:1%;
+            color:white;
+        }
+        a{
+            color:rgb(73, 73, 242);
+        }
+        .futm a{
+            text-decoration: none;
+            color:white;
+        }
+        .mainc{
+            background-color: black;
+            opacity: 0.7;
+            width:400px;
+            height:100%;
+            box-sizing: border-box;
+            margin-bottom:5%;
+        }
+        .mainc1{
+            height:60%;
+            margin:10%;
+            margin-bottom:0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .mh{
+            width:100%;
+            height:10%;
+            color:white;
+            font-weight: 600;
+            font-size: 35px;
+
+
+        }
+        .mm{
+            width:100%;
+            height:70%;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding-top: 5%;
+            /* display: grid;
+            grid-template-columns: repeat(1,100%); */
+
+        }
+        .mb{
+            width:100%;
+            height:20%;
+
+        }
+        .need{
+            display:flex;
+            width:100%;
+            justify-content: space-between;
+        }
+
+    @media screen and (max-width:750px)
+    {
+        body{
+            background-color: black;
+        }
+        .mainc{
+            width:100%;
+        }
+    }
+
+        
+        
+        
+
+
+    </style>
+    <body class="column">
+        <div class="complete column border">
+            <header class="border">
+              <a href="../netflix_html/netflix-clone.html">  <div class="logo column border" style="height:45px;width:166.5px;">
+                    <img src="../image_netflix/logo netflix.png" style="height:auto;width:100%;" alt="">
+                </div>
+            </a>
+            </header>
+            <main class="border row">
+                <div class="mainc border">
+                    <div class="mainc1 border">
+                        <div class="mh border">
+                            Sign in
+                        </div>
+                        <div class="mm border">
+                            <input type="text" style="height:70px;width:100%;margin-bottom:10px;background-color: #333333;color:white;" placeholder="Enter email">
+                            <input type="text" style="height:70px;width:100%;background-color: #333333;color:white;" placeholder="Password">
+
+                            <button style="height:70px;width:100%;font-size:20px;background-color: red;color:white;margin-top:50px;">Submit</button>
+                            <div class="need border" style="color:white;">
+                                Need help?
+                                <label for="checkbox">
+                                <input type="checkbox" checked="checked">
+                                Remember me
+                            </label>
+                            </div>
+                        </div>
+                        <div class="mb border">
+                            <p>New to Netflix?<a href="#">Sign up now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="border row">
+              <div class="fcover border column">  
+                <div class="futh border">
+                    Questions? Call 9874125870
+                </div>
+                <div class="futm border">
+                    <a href="" class="inf">FAQ</a>
+                    <a href="" class="inf">Help center</a>
+                    <a href="" class="inf">Terms of use</a>
+                    <a href="" class="inf">cookie prefrences</a>
+                    <a href="" class="inf">Terms of use</a>
+                    <a href="" class="inf">privacy</a>
+                </div>
+                <div class="futb border">
+                    <select name="lang" id="lang" class="language">
+                        <option value="lang">English</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+            </div>
+            </footer>
+        </div>
+    </body>
+</html>
